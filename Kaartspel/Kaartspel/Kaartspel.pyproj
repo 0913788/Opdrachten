@@ -5,13 +5,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5f744b9f-c2e8-4105-b350-90b5fb378eee</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Kaartspel.py</StartupFile>
+    <StartupFile>Program.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Kaartspel</Name>
     <RootNamespace>Kaartspel</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,12 +29,14 @@
     <Compile Include="Empty.py" />
     <Compile Include="Game.py" />
     <Compile Include="Hand.py" />
-    <Compile Include="Kaartspel.py" />
     <Compile Include="Node.py" />
     <Compile Include="Player.py" />
     <Compile Include="Players.py" />
     <Compile Include="Program.py" />
     <Compile Include="Stack.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
