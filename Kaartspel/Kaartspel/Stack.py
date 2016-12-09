@@ -7,9 +7,10 @@ class Stack():
         self.stackType= typeOfStack
         self.headNode = self.items
 
+    # Get the next item from the linked list.
     def Next(self): self.items = self.items.tail
  
-    #TODO
+    #TODO Adds a new node, build up from a given value, to the linked list.
     def AddNewNode(self, value):
         #Change the type, not the string...
         newNode="Change me"
@@ -27,10 +28,10 @@ class Stack():
             newTmpHead.tail = newNode
             self.Reset()      
 
-    #TODO    
+    #TODO Adds an existing node to the linked list.
     def AddExistingNode(self, node): pass
 
-    #TODO
+    #TODO Removes the current node in the linked list.
     def RemoveCurrent(self):
         #Change the type, not the string... 
         tmp ="Change me"
@@ -45,19 +46,19 @@ class Stack():
             newTmpHead.tail = tmp.tail         
         tmp.RemoveTail()
 
-    #TODO
+    #TODO Sets a new headNode (begin of the linked list)
     def SetHeadNode(self,node): pass
 
-    #TODO    
+    #TODO Returns the current node of the linked list.
     def GetCurrentNode(self): pass
 
-    #TODO    
+    #TODO Returrns the current value of a node within the linked list.
     def GetCurrentValue(self): pass
 
-    #TODO
+    #TODO Set the position of the linked list to the first node (begin)
     def Reset(self): pass
     
-    #TODO
+    #TODO Return if a node is empty.
     def Empty(self): pass
 
     #TODO    

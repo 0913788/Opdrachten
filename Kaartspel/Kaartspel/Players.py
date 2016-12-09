@@ -6,7 +6,7 @@ class Players(Stack):
         super().__init__("player")
         self.CreatePlayer(amount)
     
-    #TODO    
+    #TODO Sets up a player and adds it to the linked list.
     def CreatePlayer(self, amount):
         for i in range(amount):
             #Create a player

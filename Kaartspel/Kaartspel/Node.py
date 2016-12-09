@@ -3,6 +3,7 @@ class Node:
     self.tail = tail
     self.value = value
     self.isEmpty=False
-
+  
+  #Removes the tail of the node
   def RemoveTail(self):
         self.tail=None

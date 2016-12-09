@@ -7,7 +7,7 @@ class Player():
 
     def ToString(self): return self.name
     
-    #TODO
+    #TODO Adds a predetirmined node to the linked list.
     def DrawCard(self, node): pass
     
     #TODO

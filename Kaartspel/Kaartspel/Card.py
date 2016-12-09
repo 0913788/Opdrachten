@@ -7,6 +7,7 @@ class Card():
         else:
             self.effect=self.SetEffect(effect)
     
+    #String representation of a card.
     def ToString(self):
         return self.type +" "+ str(self.value)
 

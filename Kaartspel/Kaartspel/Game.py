@@ -9,9 +9,11 @@ class Game():
         self.playedDeck=Deck()
         self.activePlayer=self.players.GetCurrentValue()
 
+    #Clears the CL.
     def ClearScreen(self):
         os.system("cls")
-
+    
+    #Sets up the starting conditions of the game. (7 cards for each player and 1 played card)
     def SetStartConditions(self):
         for i in range(7):
             while(not self.players.Empty()):
@@ -20,7 +22,7 @@ class Game():
             self.players.Reset()
         self.playedDeck.AddExistingNode(self.deck.DrawCard())
     
-    #TODO
+    #TODO Prints the basic ui.
     def PrintBase(self):
         #Change the type, not the string...
         lastCard="Change me"      
@@ -29,32 +31,32 @@ class Game():
         print("Your hand: ")
         self.activePlayer.hand.PrintHand()
     
-    #TODO 
+    #TODO Defines player actions.
     def PlayerAction(self):
         x= input("enter to continue")
         self.ClearScreen()  
 
-    #TODO
+    #TODO Switches the active player to the next player in the list.
     def SwitchTurn(self):
         self.players.Next()
         #If what?
         if():
             self.players.Reset()
         self.activePlayer=self.players.GetCurrentValue()
-        input("switch to player {}. Press enter to continue".format(self.players.GetCurrentValue().name))
+        input("switch to player {}. Press enter to continue".format(self.activePlayer.name))
     
-    #TODO
+    #TODO Basic gameloop.
     def GameLoop(self):
         while(True):
             self.PrintBase()
             self.PlayerAction()
             self.SwitchTurn()
     
-    #TODO
+    #TODO Game "Run" function.
     def Run(self):
         self.RandomizePlayerOrder()
         self.SetStartConditions()
         self.GameLoop()
     
-    #TODO
+    #TODO Randomize the player order.
     def RandomizePlayerOrder(self): pass
