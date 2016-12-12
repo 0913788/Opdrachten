@@ -39,9 +39,9 @@ class Stack():
             self.Next()
             self.SetHeadNode(self.items)
         else:
-            self.items = self.headNode
+            self.Reset()
             while(self.items != tmp):
-                newTmpHead= self.items
+                newTmpHead = self.items
                 self.Next()
             newTmpHead.tail = tmp.tail         
         tmp.RemoveTail()
