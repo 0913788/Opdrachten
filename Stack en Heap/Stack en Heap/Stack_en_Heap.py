@@ -8,7 +8,6 @@ def opdracht1(a):
         a=a-1
     return r
 opd1 = opdracht1(5)
-print(opd1)
 
 def opdracht2(a):
     r = []
@@ -17,7 +16,6 @@ def opdracht2(a):
             r.append(a[i])
     return r
 opd2 = opdracht2([0,1,2,3,4]) 
-print(opd2)
 
 def opdracht3(a):
     r = Empty()
@@ -33,5 +31,4 @@ def opdracht4(a,f):
             return Node(a.head, opdracht4(a.tail, f))
         return opdracht4(a.tail,f)   
     return a
-
-opd4=opdracht4(Node(2, Node(5, Node(86, Node(101,Empty())))),lambda x: x%2==0)
+opd4=opdracht4(Node(2, Node(5, Node(86, Node(101,Empty())))), lambda x: x%2==0)
